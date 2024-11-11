@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数字游牧人</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="window-container">
+    <div class="title-bar">
+        <span>数字游牧人</span>
+        <div class="window-controls">
+            <span class="minimize-btn"></span>
+            <span class="maximize-btn"></span>
+            <span class="close-btn"></span>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- 图片区域 -->
+        <div class="image-container">
+            <img src="//www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="风景图片">
+        </div>
+
+        <h1>数字游牧人</h1>
+        <p>我叫数字游牧人，我的生活充满了自由与探索的精神。数字游牧人，这个身份不仅仅是一种生活方式，更是一种对自由和探索的渴望。我们通过互联网移动办公，支持生活和旅行，享受着无拘无束的生活状态。起初，这种生活方式在欧美等国家流行，而今，中国也在逐渐追赶这一全球趋势。我们不再受限于传统的办公室环境，可以在世界各地自由工作和生活。</p>
+
+        <div class="sub-section">
+            <h2>这是一个小标题</h2>
+            <p>这是一个小标题下的内容</p>
+        </div>
+    </div>
+    <!-- 计数按钮 -->
+    <button class="count-button" onclick="incrementCount()">点击我进行计数</button>
+        
+    <!-- 计数显示 -->
+    <div class="count-display" id="countDisplay">计数：0</div>
+</div>
+
+
+<script>
+    // 初始化计数
+    let count = 0;
+
+    // 点击按钮时增加计数
+    function incrementCount() {
+        count += 1;
+        document.getElementById("countDisplay").textContent = "计数：" + count;
+    }
+</script>
+
+
+</body>
+</html>

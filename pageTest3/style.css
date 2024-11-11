@@ -1,0 +1,146 @@
+/* 页面整体背景 */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 外部容器模拟窗口样式 */
+.window-container {
+    width: 60%;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.window-container:hover {
+    transform: translateY(-5px); /* 轻微浮动效果 */
+}
+
+/* 标题栏样式 */
+.title-bar {
+    background-color: #0078d7;
+    color: #ffffff;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* 标题栏按钮 */
+.window-controls {
+    display: flex;
+    gap: 6px;
+}
+
+.window-controls span {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.close-btn {
+    background-color: #e81123;
+}
+
+.minimize-btn {
+    background-color: #f9c400;
+}
+
+.maximize-btn {
+    background-color: #3cb371;
+}
+
+/* 内容容器 */
+.content {
+    padding: 25px;
+    color: #333333;
+    font-size: 16px;
+}
+
+/* 标题和段落样式 */
+h1 {
+    color: #0078d7;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* 图片容器样式 */
+.image-container {
+    width: 100%; /* 调整宽度为整个容器宽度 */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+/* 小标题内容 */
+.sub-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0078d7;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 计数按钮样式 */
+.count-button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #0078d7;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.count-button:hover {
+    background-color: #005a9e;
+    transform: scale(1.05); /* 放大效果 */
+}
+
+/* 计数显示样式 */
+.count-display {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
